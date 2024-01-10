@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{28FF353F-2973-E45B-6BFD-60DAD2ABB42D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Oculus.AvatarSDK2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Player\</OutputPath>
+    <DefineConstants>UNITY_2022_3_0;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;USING_XR_MANAGEMENT;USING_XR_SDK_OCULUS;UNITY_IMPROVED_TRANSFORMS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.18</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2022.3.0f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeInterpolatedSkinnedMvRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Avatar.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarTrackingBodyState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CustomHandPoses\OvrAvatarHandJointType.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarGazeTargetManager.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarFacePose.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\OvrHandleGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEyePoseBehavior.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Tracking.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrComputeBufferPool.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Lifecycle.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\OvrAvatarSkinningOverride.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Types.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODGroup.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Material.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODCostData.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrComputeUtils.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrJointsData.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuMorphTargetsCombiner.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_JointMonitoring.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarCallbackContextBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarLipSyncBehavior.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinningConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarMaterialExtensionConfig.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Animation.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Behavior.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarComputeSkinnedPrimitive.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\JointMonitors\OvrAvatarEntityJointMonitorJob.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Events.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarAssetBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\tracking\OvrAvatarAPI_LipSync.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\IOvrAvatarNativeBodyTracking.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarBodyTrackingContext.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\tracking\OvrAvatarAPI_Body.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\OvrAvatarHelperExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Streaming.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_Types.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Mesh.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\OvrSingletonBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarImage.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputManager.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Interfaces\IOvrAvatarInputControlDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarFacePoseProviderBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODSkinnableGroup.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODBehaviourStateGroup.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Importance.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarFaceTrackingBehaviorOvrPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_AnimationTypes.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODMaterials.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrExpandableTextureArray.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarVisemeContext.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODManager.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarStatsTracker.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_LOD.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Interfaces\IOvrAvatarInputTrackingDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\OvrSkinningTypes.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_StreamingInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Textures.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Manifestation.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarPerformanceAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Render.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeSkinnedRenderableBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Config\OvrConfigTypes.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Lod.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerJointsOnlyDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarGazeTarget.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarGpuInterpolatedSkinnedRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarBodyTrackingBehavior.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerMorphTargetsOnlyDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLOD.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEyeTrackingBehaviorOvrPlugin.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarLog.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinningUtils.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeSkinnedMvRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputControlDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODGameObjectGroup.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_BehaviorPrototype.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarLipSyncState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerJointsOnly.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\OvrTime.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODActionGroup.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderNameUtils.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderDeprecationManager.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerBaseDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\OvrAvatarUtility.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\OvrAvatarUnitySkinnedRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\OvrAvatarConversions.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrCombinedMorphTargetsQuads.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarTrackingPose.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\IOvrGpuSkinnerDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarMaterialExtension.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntitlement.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODLookat.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarMaterial.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_EntityInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\IblSetupForEnvironment.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\OvrStateMachine.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarTrackingHandsState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_EventsInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_DebugInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarLipSyncContext.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarPrimitive.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\IOvrAvatarNativeEyePose.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_HandPoses.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Extensions.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinnerMorphTargetsOnly.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\IOvrAvatarNativeHandDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarGpuInterpolatedSkinnedMvRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Streaming.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputTrackingContextBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEyeTrackingState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEyePoseProviderBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\PlatformHelperUtil.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarGpuSkinnedRenderableBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\OvrGpuSkinningExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrComputeMeshAnimatorShader.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Debug.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\JointMonitors\OvrAvatarEntityJointMonitor.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Event.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarSkinningController.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeSkinningVertexBufferBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Utility\AssetsPathFinderHelper.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputTrackingState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Loading.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Permissions.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarGpuSkinnedPrimitive.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrGpuSkinningAPI_Main.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuSkinner.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarResourceTimer.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Debug.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrGpuCombinerDrawCall.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarTrackingSkeleton.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarSkinnedRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrPluginTracking.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrMorphTargetsData.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrFreeListBufferTracker.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Asset.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\LOD\AvatarLODParent.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarManager_Skinning.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderManagerBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_BehaviorInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarEntity_Rendering.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_Entity.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputControlState.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderManagerMultiple.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_CompactSkinning.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\experimental\OvrAvatarAPI_AnimationInternal.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarBodyTrackingContextBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\AssetTypes\OvrAvatarResourceLoader.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CustomHandPoses\OvrAvatarCustomHandPose.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarGpuSkinnedRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\DummySkinningBufferPropertySetter.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\IOvrGpuSkinner.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarGpuSkinnedMvRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Interfaces\IOvrAvatarHandTrackingDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarLipSyncContextBase.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrSkinningQuads.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarInputTrackingDelegate.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeSkinningVertexBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\IOvrAvatarNativeFacePose.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeInterpolatedSkinnedRenderable.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrComputeMeshAnimator.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\CAPI\OvrAvatarAPI_SDKVersionInfo.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarShaderManagerSingle.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\OvrAvatarFacePoseBehavior.cs" />
+    <Compile Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\OvrAvatarComputeSkinnedRenderable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\OvrSkinningCompute.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\UnityLighting\AvatarUnitySurfaceFields.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeInterpolators.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarHair\AvatarHairProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\AvatarCustom.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\OvrOutputBufferCompute.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\UnityLighting\AvatarUnityLightingTypes.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\Shadows\BlobShadows.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\LibraryVertexGI\export\pbr_vert.unity.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityStandard\AvatarStandardInput.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\FBSafeMode.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityStandard\Avatar-Standard.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Avatar-Horizon.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyePropertiesHeadC.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarVertexFetch.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityStandard\AvatarStandardCore.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarCommonVertexParams.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Avatar-Horizon.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Unlit\UnlitVertFrag.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrLightTypes.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\Shadows\VSM.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeAlbedo.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\replacement\structs_vert.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\common-frag.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\replacement\platform_frag.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\export\pbr_vert.unity.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\AvatarCustomTypes.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarVGI\AvatarVGITypes.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarShaderMacros.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\OvrApplyMorphsAndSkinning.compute" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarCommonProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrDecodeUtils.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeInterpolatorsHeadC.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\app_specific\app_declarations.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarTextured\AvatarTexturedProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\fb_sphere_map.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\OvrMorphsCompute.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\VertexGI\SurfaceShader.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\replacement\options_common.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\UnityGIAvatar.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarCommonUtils.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\export\pbr_frag.unity.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarCommonDither.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\FBTonemapping.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSubmesh\AvatarSubmeshLighting.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarTextured\AvatarTexturedAlbedo.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSkin\AvatarSkinProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarSupportDefines.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSkin\AvatarSkinAlbedo.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarPropertiesMap.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSkin\AvatarSkinSurfaceFunctions.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Recommended\Avatar-Meta.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarPrimaryColorProperty.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrAvatarMotionVectorsCore.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\LibraryVertexGI\export\pbr_frag.unity.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\replacement\platform_vert_main.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\Avatar-Human.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\common-vert.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarHair\AvatarHairAlbedo.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\app_specific\app_functions.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrUnityGlobalIlluminationURP.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSubmesh\AvatarSubmeshProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Unlit\UnlitTypes.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeGlint.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\UnityLighting\AvatarUnityLighting.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\DisplayArray.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrUnityLightsURP.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSkin\AvatarSkinLighting.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Oculus.AvatarSDK2.asmdef" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Recommended\MetaAvatarCore.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrDecodeFormats.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarShaderTypes.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Recommended\app_specific\app_functions.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\OvrVertexCompute.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSolidColor\AvatarSolidColorAlbedo.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Recommended\app_specific\app_declarations.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarCommonLighting.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\FBFog.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarVGI\AvatarVGIFramework.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityMobile\Avatar-Mobile-BumpSpec.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarMainTex.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityMobile\Avatar-Mobile-VertexLit.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\replacement\platform_vert.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeAlbedoHeadC.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\precision.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarEye\AvatarEyeProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarCommonSurfaceFields.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\LibraryBuiltInPipeline.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\LibraryURP.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityStandard\AvatarStandardCoreForwardSimple.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrUnityLightsBuiltIn.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarSolidColor\AvatarSolidColorProperties.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\LibraryCommon.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\Avatar-Library.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Skybox-Cubed-Reverse.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\AvatarSubmesh.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarSecondaryColorProperty.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrGlobalIlluminationTypes.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Library\UnityGIAvatar.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\VertexGI\Interface.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\ShaderUtils\OvrUnityGlobalIlluminationBuiltIn.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityMobile\Avatar-Mobile-Diffuse.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Human\skinning.hlsl" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityMobile\Avatar-Mobile-Custom.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\ReferenceOnly\UnityStandard\AvatarStandardCoreForward.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\Horizon\MacroRemapper.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\combine-morph-targets.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarShaderFramework.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Skinning\GpuSkinning\Shaders\skin-to-texture.shader" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarTertiaryColorProperty.cginc" />
+    <None Include="Library\PackageCache\com.meta.xr.sdk.avatars@24.0.1\Scripts\Common\Shaders\Deprecated\Horizon\AvatarCommon\AvatarEffectsMap.cginc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{E07C292C-0119-9AE9-8DC6-CEA42026211E}</Project>
+      <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
